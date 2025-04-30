@@ -19,34 +19,45 @@
   </header>
 
   <main>
-    <form id="evaluation-form">
-      <h2>Enter Your Stats</h2>
+    <section class="evaluation-container">
+      <h2>Track Your Weekly Stats</h2>
+      <p>Enter your performance stats below to get personalized feedback on how to improve.</p>
 
-      <fieldset>
-        <legend>Wide Receiver Stats</legend>
-        <label for="receptions">Receptions:</label>
-        <input type="number" id="receptions" name="receptions">
-        <label for="yards">Yards:</label>
-        <input type="number" id="yards" name="yards">
-        <label for="tds">Touchdowns:</label>
-        <input type="number" id="tds" name="tds">
-      </fieldset>
+      <div class="evaluation-form">
+        <!-- Wide Receiver Section -->
+        <div class="stat-section">
+          <img src="https://via.placeholder.com/100" alt="Wide Receiver Icon" class="icon">
+          <h3>Wide Receiver Stats</h3>
+          <label for="receptions">Receptions:</label>
+          <input type="number" id="receptions" name="receptions">
+          <label for="yards">Yards:</label>
+          <input type="number" id="yards" name="yards">
+          <label for="tds">Touchdowns:</label>
+          <input type="number" id="tds" name="tds">
+        </div>
 
-      <fieldset>
-        <legend>Defensive Back Stats</legend>
-        <label for="tackles">Tackles:</label>
-        <input type="number" id="tackles" name="tackles">
-        <label for="interceptions">Interceptions:</label>
-        <input type="number" id="interceptions" name="interceptions">
-        <label for="passBreakups">Pass Breakups:</label>
-        <input type="number" id="passBreakups" name="passBreakups">
-      </fieldset>
+        <!-- Defensive Back Section -->
+        <div class="stat-section">
+          <img src="https://via.placeholder.com/100" alt="Defensive Back Icon" class="icon">
+          <h3>Defensive Back Stats</h3>
+          <label for="tackles">Tackles:</label>
+          <input type="number" id="tackles" name="tackles">
+          <label for="interceptions">Interceptions:</label>
+          <input type="number" id="interceptions" name="interceptions">
+          <label for="passBreakups">Pass Breakups:</label>
+          <input type="number" id="passBreakups" name="passBreakups">
+        </div>
 
-      <button type="button" id="evaluate-button">Evaluate</button>
-    </form>
+        <button type="button" id="evaluate-button">Evaluate</button>
+      </div>
 
-    <div id="feedback"></div>
+      <div id="feedback" class="feedback-box"></div>
+    </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Le Football. All rights reserved.</p>
+  </footer>
 
   <script>
     document.getElementById('evaluate-button').addEventListener('click', () => {
